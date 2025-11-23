@@ -57,5 +57,6 @@ requirements.txt
 ## 👨‍🎓 About
 
 Project developed for the **Deep Learning course** of **Università Cattolica del Sacro Cuore** of **Milan**.
+
 Author: **Giovanni Caminiti** and **Eleonora Farolfi**
 
