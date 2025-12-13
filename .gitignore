@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models
+*.pth
+*.pt
+
+# Data folders
+data/
+dataset/
+datasets/
+
+# Outputs
+outputs/
+runs/
+
+# OS files
+.DS_Store
+Thumbs.db
