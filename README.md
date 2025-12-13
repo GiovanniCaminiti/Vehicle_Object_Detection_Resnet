@@ -50,15 +50,14 @@ requirements.txt
 
 This repository includes two different experimental configurations:
 
-- **Transfer Learning (4 classes)**  
-  The model is trained on a restricted subset of vehicle categories  
-  (**car, truck, bus, motorcycle**) with a frozen ResNet backbone.  
+- **Transfer Learning (5 classes)**  
+  The model is trained on a extended subset of vehicle categories  
+  (**car, truck, bus, motorcycle, ambulance**) with a frozen ResNet backbone.  
   This setup is used as a baseline.
 
-- **Fine-Tuning (5 classes)**  
-  The model is fine-tuned on an extended subset of vehicle categories,  
-  including **ambulance**, for a total of five classes.  
-  This configuration explores the impact of fine-tuning on a more complex classification task.
+- **Fine-Tuning (4 classes)**  
+  The model is fine-tuned on an restricted subset of vehicle categories,  
+  excluding **ambulance**.  
 
 The two setups are not meant to be directly compared, as they differ in the number of target classes.
 
