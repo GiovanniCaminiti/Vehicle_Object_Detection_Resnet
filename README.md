@@ -19,7 +19,8 @@ The model combines a **ResNet backbone** with a **YOLOv1** detection head, train
 
 ## 📂 Repository Structure
 
-```notebooks/
+```
+notebooks/
 ├── Yolov1Resnet_VehiclesDataset.ipynb
 └── Fine_Tuning_Vehicles.ipynb
 
