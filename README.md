@@ -41,15 +41,33 @@ requirements.txt
 ## 🗂 Dataset
 
 - **Vehicles-OpenImages.v1-416x416** (COCO format)  
-- Classes used in this project: **car**, **truck**, **bus**, **motorcycle**  
+- Vehicle classes vary depending on the experimental setup (4 or 5 classes)
 - The fine-tuning notebook automatically filters and rebuilds the COCO annotations  
+
+---
+
+## 🔬 Experimental Setups
+
+This repository includes two different experimental configurations:
+
+- **Transfer Learning (4 classes)**  
+  The model is trained on a restricted subset of vehicle categories  
+  (**car, truck, bus, motorcycle**) with a frozen ResNet backbone.  
+  This setup is used as a baseline.
+
+- **Fine-Tuning (5 classes)**  
+  The model is fine-tuned on an extended subset of vehicle categories,  
+  including **ambulance**, for a total of five classes.  
+  This configuration explores the impact of fine-tuning on a more complex classification task.
+
+The two setups are not meant to be directly compared, as they differ in the number of target classes.
 
 ---
 
 ## 🧠 Model Architecture
 
 - **Backbone:** ResNet (ImageNet)
-- **Head:** YOLOv1 grid-based detection (S = 7, B = 2, C = 4)
+- **Head:** YOLOv1 grid-based detection (S = 7, B = 2, C = 4 or 5 depending on the setup)
 - **Loss:** YOLOv1 Squared Error Loss
 - **Input size:** 416×416
 
